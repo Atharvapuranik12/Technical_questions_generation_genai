@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-import gemini
+import google.generativeai as genai
 import PyPDF2
 
 app = Flask(__name__)
