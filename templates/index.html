@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume and Job Description Upload</title>
+</head>
+<body>
+    <h1>Upload Your Resume and Job Description</h1>
+    <form action="/generate_questions" method="post" enctype="multipart/form-data">
+        <label for="resume">Upload Resume:</label><br>
+        <input type="file" id="resume" name="resume" accept=".pdf"><br><br>
+        <label for="job_description">Upload Job Description:</label><br>
+        <input type="file" id="job_description" name="job_description" accept=".pdf"><br><br>
+        <input type="submit" value="Generate Questions">
+    </form>
+</body>
+</html>
