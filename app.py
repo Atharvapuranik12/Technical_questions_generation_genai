@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import gemini
 import PyPDF2
-
+import os
 app = Flask(__name__)
 port = int(os.environ.get("PORT", 5000))
 def extract_text_from_pdf(file):
