@@ -3,8 +3,7 @@ import gemini
 import PyPDF2
 
 app = Flask(__name__)
-
-
+port = int(os.environ.get("PORT", 5000))
 def extract_text_from_pdf(file):
     pdf_reader = PyPDF2.PdfReader(file)
     text = ''
