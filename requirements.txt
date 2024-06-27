@@ -36,3 +36,4 @@ Werkzeug==3.0.1
 PyPDF2
 PyMuPDF
 boto3
+flask-cors
