@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify, render_template
+from flask_cors import CORS
 import google.generativeai as genai
 import PyPDF2
 import os
@@ -11,6 +12,9 @@ from dotenv import load_dotenv
 
 app = Flask(__name__)
 load_dotenv()
+
+# Add CORS support
+CORS(app, origins=["https://app.rework.club"])
 
 port = int(os.environ.get("PORT", 5000))
 
