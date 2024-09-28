@@ -24,7 +24,7 @@ def generate_questions():
 
     resume_text = extract_text_from_pdf(resume_file)
     job_description_text = extract_text_from_pdf(job_description_file)
-    skills = input("Enter Skills :")
+    skills = "Machine Learning, Python, Deep Learning, AI, LLM ";
 
     custom_ntquestions = gemini.generate_custom_non_tech_questions(resume_text, job_description_text)
     custom_tquestions = gemini.generate_custom_tech_questions(skills)
